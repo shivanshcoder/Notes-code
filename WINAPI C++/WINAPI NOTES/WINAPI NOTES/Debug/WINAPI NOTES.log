@@ -1,0 +1,5 @@
+﻿  Hello Window Program.cpp
+c:\users\shiva\documents\repos\notes-code\winapi c++\winapi notes\winapi notes\hello window program.cpp(8): warning C4101: 'msg': unreferenced local variable
+c:\users\shiva\documents\repos\notes-code\winapi c++\winapi notes\winapi notes\hello window program.cpp(7): warning C4101: 'hwnd': unreferenced local variable
+Hello Window Program.obj : error LNK2019: unresolved external symbol "long __stdcall WndProc(struct HWND__ *,unsigned int,unsigned int,long)" (?WndProc@@YGJPAUHWND__@@IIJ@Z) referenced in function _WinMain@16
+C:\Users\Shiva\Documents\Repos\Notes-code\WINAPI C++\WINAPI NOTES\Debug\WINAPI NOTES.exe : fatal error LNK1120: 1 unresolved externals
