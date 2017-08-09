@@ -2,24 +2,26 @@
 #include<conio.h>
 #include < math.h >
 
-//#define make_positve(a)
+//makes the negative number positve
 int make_posit(int a) {
 	if (a < 0)return a*(-1);
 	return a;
 }
+//prints the integer
 void printint(int A) {
 	printf("%d", A);
 }
+//prints the floats
 void printfloat(float A) {
 	printf("%f", A);
 }
-
+//prints and takes a integer input
 int input(const char* string, int *num) {
 	printf(string);
 	scanf("%d", &num);
 	return num;
 }
-
+//calculates teh roots of quadratic equation
 void calculate_root(int a, int b, int c) {
 	long int desc = b*b - 4 * a*c;
 	double temp;
@@ -30,19 +32,16 @@ void calculate_root(int a, int b, int c) {
 		printf("\nThe Second root:%f %f i", -b / (2.0 * a), -temp / (2.0 * a));
 		return;
 	}
-	//printfloat(temp);
 	printf("\nThe First root:%f", (-b + temp) / 2 * a);
 	printf("\nThe Second root:%f", (-b - temp) / 2 * a);
 }
 
 void equation_in() {
 	int a, b, c;
-	//_clrscr();
 	printf("Equation of type a*X^2 + b*X +c\n");
 	a = input("\nEnter the value of a:", &a);
 	b = input("\nEnter the value of b:", &b);
 	c = input("\nEnter the value of c:", &c);
-	//printf("%d%d%d", a, b, c);
 	calculate_root(a, b, c);
 }
 
