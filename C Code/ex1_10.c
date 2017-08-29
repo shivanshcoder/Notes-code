@@ -4,7 +4,7 @@
 void main() {
 
 	int c;
-	unsigned x;
+
 	while ((c = getchar()) != EOF) {
 		switch (c) {
 		case '\n':
