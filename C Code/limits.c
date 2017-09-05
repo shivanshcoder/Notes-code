@@ -9,7 +9,7 @@ int main() {
 	printf("The maximum value of SIGNED CHAR = %d\n", SCHAR_MAX);
 	printf("The maximum value of UNSIGNED CHAR = %d\n", UCHAR_MAX);
 
-	printf("The size of SHORT =%d\n", sizeof(int));
+	printf("The size of SHORT =%d\n", sizeof(short));
 	printf("The minimum value of SHORT INT = %d\n", SHRT_MIN);
 	printf("The maximum value of SHORT INT = %d\n", SHRT_MAX);
 	printf("The maximum value of USHORT INT = %d\n", USHRT_MAX);

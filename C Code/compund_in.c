@@ -1,39 +1,53 @@
+/*
+  Program to Calculate Simple and Compund Interest
+  Copyright not applicable
+*/
 #include<stdio.h>
+#include<math.h>
 
-float compund_int(int principal, float rate, int years) {
-	
-	return principal*pow((1 + rate / 12), 12 * years);
+void print_in(char* print, char* format, void* a) {
+	printf(print);
+	scanf(format, a);
 }
 
-float simple_int(int principal, float rate, int years) {
+double compund_int(int principal, double rate, int years) {
+	return principal*pow((1 + rate / 12), 12 * years);
+}
+double simple_int(int principal, double rate, int years) {
 	return principal*(1 + rate*years);
 }
 
-void enter_info(int *principal, float *rate, int *years) {
+void enter_info(int *principal, double *rate, int *years) {
 	system("cls");
-	printf("Enter Principal:");
-	scanf("%d", principal);
-	printf("Enter Rate of Interest:");
-	scanf("%f", rate);
-	printf("Enter Tenure in years:");
-	scanf("%d", years);
+	print_in("enter principal:", "%d", principal);
+	print_in("enter rate of interest:", "%lf", rate);
+	print_in("enter tenure in years:", "%d", years);
+
 }
 void main() {
 	int principal, years;
-	float rate,temp;
+	double rate,temp;
 	int choice;
+	system("cls");
+
 	printf("Interest Calculator\n");
 	printf("1. Compound Interest\n");
 	printf("2. Simple Interest\n");
 	printf("3. Exit\n");
-	printf("Choice(1-3):");
-	scnaf("%d", choice);
+
+	pint_in("Choice(1-3):", "%d", &choice);
+	if (choice == 3)return;
 
 	enter_info(&principal, &rate, &years);
 	system("cls");
 	switch (choice) {
-	case 1: temp = 
+	case 1: 
+		printf("The Calculated Total Amount is: %lf \n", compund_int(principal, rate, years));
+		break;
 	case 2:
-		printf("The Calculated Total Amount is:%f", compund_int(principal, rate, years));
+		printf("The Calculated Total Amount is: %lf \n", simple_int(principal, rate, years));
+		break;
 	}
+	system("pause");
+	main();
 }

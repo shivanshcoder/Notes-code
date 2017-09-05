@@ -1,12 +1,15 @@
+/*
+  Some miscellaneous functons using bitwise operators
+*/
 #include<stdio.h>
 #define ENDL printf("\n")
-void bits(int num) {
-	//for (int i = 0; i < 50; ++i)printf(" ");
+
+void bits(int num) { //direct printing
+	for (int i = 0; i < 30; ++i)printf("0"); //4 byte int suffucient 
 	while (num) {
 		printf("%d", num & 0x1);
 		num = num >> 1;
-		//	num = temp;
-		//printf("\b\b");
+		printf("\b\b");
 	}
 }
 

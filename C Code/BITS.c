@@ -1,16 +1,31 @@
+/*
+  This program prints the decimal number into Binary Form
+*/
+
 #include<stdio.h>
-//This program prints the decmal number into Binary Form
 #include<climits>
-void bits(int num) {
-	for (int i = 0; i < 29; ++i)printf(" ");
+
+
+unsigned getbits(unsigned x, int p, int n) {
+	return (x >> (p - n) & ~(~0 << n));
+}
+
+unsigned setbits(unsigned x, int p, int n, unsigned y) {
+	unsigned temp = getbits(x, p, n);
+	y = y | temp;
+	return y;
+}
+
+
+void bits(int num) { //direct printing
+	for (int i = 0; i < 30; ++i)printf("0"); //4 byte int suffucient 
 	while (num) {
 		printf("%d", num & 0x1);
 		num = num >> 1;
-	//	num = temp;
 		printf("\b\b");
 	}
 }
-void test(int num) {
+void test(int num) { //using array
 	int val = 0;
 	int out[50];
 	int temp = num;
@@ -25,23 +40,14 @@ void test(int num) {
 		val--;
 	}
 }
-//
-//int temp = num;
-//int output[0] =  temp & 0x1;
-//temp = num >> 1;
-//num = temp;
-
 
 
 void main() {
-	int num;
-	printf("%d\n", INT_MAX);
+	int num = INT_MAX;
 	scanf("%d", &num);
-	//num = ~0;
 	bits(num);
 	printf("\n");
 	test(num);
 	printf("\n");
-//	system("pause");
-	main();
+	system("pause");
 }

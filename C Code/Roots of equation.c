@@ -1,3 +1,6 @@
+/*
+  Finds Roots of a Quadratic Equation
+*/
 #include<stdio.h>
 #include<conio.h>
 #include < math.h >

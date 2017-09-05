@@ -1,3 +1,6 @@
+/*
+  This Program Finds if a number is odd and also is prime or not
+*/
 #include<stdio.h>
 #define false 0
 #define true 1

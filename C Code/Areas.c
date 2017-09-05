@@ -1,3 +1,8 @@
+/*
+  Program to Calculate area of various shapes
+  Copyright not applicable 
+*/
+
 #include<stdio.h>
 
 int area_rect(int len, int wid) {

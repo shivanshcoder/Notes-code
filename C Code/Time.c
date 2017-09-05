@@ -1,3 +1,6 @@
+/*
+  This Program converts the time from seconds to larger units
+*/
 #include<stdio.h>
 
 void print_llu(char* s,unsigned long long num) {

@@ -1,9 +1,12 @@
+/*
+  This Program converts binary to decimal
+*/
 #include<stdio.h>
-#define bits 8/*
+#define bits 8
 void input(char *s, char *format, void *a) {
 	printf(s);
 	scanf(format, a);
-}*/
+}
 
 void swap(char* a, char* b) {
 	char temp = *a;
@@ -67,15 +70,11 @@ void main() {
 	int temp = 0;
 	int sign = 1;
 	input("Enter the Binary:", "%s", binary);
-	//printf("Enter the Binary:");
-	//scanf("%s", binary);
+
 	fill_array(binary);
 
-	//printf("1. Unsigned\n2. 1's Complement\n3. 2's Complement\n");
-	//input("\nChoice(1-3):", "%d", &choice);
-
-	printf("\nChoice(1-3):");
-	scnaf("%d", &choice);
+	printf("1. Unsigned\n2. 1's Complement\n3. 2's Complement\n");
+	input("\nChoice(1-3):", "%d", &choice);
 
 	switch (choice) {
 	case 1:
@@ -99,5 +98,5 @@ void main() {
 
 	}
 	printf("\n%d\n", temp);
-	//system("pause");
+	system("pause");
 }

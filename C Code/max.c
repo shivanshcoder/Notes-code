@@ -1,16 +1,18 @@
+/*
+  This Program is to find max number out of 3 numbers
+  Copyright not applicable
+*/
 #include<stdio.h>
 #include<conio.h>
 
-long int maxx(long int, long int);
+unsigned long long maxx(unsigned long long, unsigned long long);
 
-#define maxs(a,b,c) max(a,max(b,c))
-
-long int maxx(long int n1, long int n2) {
+unsigned long long maxx(unsigned long long n1, unsigned long long n2) {
 	if (n1 > n2)return n1;
 	return n2;
 }
 
 void main() {
-	printf("%ul",maxs(123, 456, 789));
+	printf("%llu", maxx(123, maxx(456, 789)));
 	_getch();
 }
