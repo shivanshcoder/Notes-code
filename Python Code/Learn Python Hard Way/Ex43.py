@@ -121,12 +121,12 @@ class LaserWeaponArmory(Scene):
 class TheBridge(Scene):
 
     def enter(self):
-        print "You burst onto the Bridge with the neitron destruct bomb"
-        print "under your arm and suprises 5 Gothons who are trying to"
-        print "take control of the ship. Each of them has an even uglier"
-        print "clown costume than the last. They haven't pulled their"
-        print "weapons out yet, as they see the active bomb under your"
-        print "arm and don't want to set it off."
+        print ("You burst onto the Bridge with the neitron destruct bomb")
+        print ("under your arm and suprises 5 Gothons who are trying to")
+        print ("take control of the ship. Each of them has an even uglier")
+        print ("clown costume than the last. They haven't pulled their")
+        print ("weapons out yet, as they see the active bomb under your")
+        print ("arm and don't want to set it off.")
 
         action = raw_input("> ")
 
