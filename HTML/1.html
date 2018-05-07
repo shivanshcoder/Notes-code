@@ -4,15 +4,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-
+    <script src="Scripts.js"></script>
 
   </head>
     <link rel="stylesheet" type="text/css" href="CSS_Syntax.css">
     
-  <body>
-
-    <h1>
-      Hello<br>
+  <body style="color:rgb(105, 4, 206)">
+    
+    <button type="button" onclick="document.getElementById('Word').style.fontSize = '45px'">Increase</button> 
+    <button type="button" onclick="document.getElementById('Word').style.fontSize = '25px'">Decrease</button> 
+    <button type="button" onclick="print('Word','BYE')">Funct</button>
+    
+    
+    <h1 id = "Word">
+      Hello
+      <br>
     </h1>
 
   </body>
