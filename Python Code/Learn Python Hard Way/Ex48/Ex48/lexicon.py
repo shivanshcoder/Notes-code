@@ -29,8 +29,7 @@ def scan(strings):
                 _tuple.append(('noun', word))
   
             elif word.isdigit():
-                inte = int(word)
-                _tuple.append(('number', inte))
+                _tuple.append(('number', convert_number(word)))
 
             else:
                 _tuple.append(('error', word))
