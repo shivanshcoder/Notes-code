@@ -7,7 +7,7 @@ def convert_number(num):
 def scan(strings):
         stops = ['the', 'in', 'of', 'from', 'at', 'it']
         directions = ['south', 'north', 'east', 'west', 'down', 'up', 'left', 'right', 'back']
-        verbs = ['go', 'kill', 'eat', 'stop']
+        verbs = ['go', 'kill', 'eat', 'stop', 'run']
         nouns = ['bear', 'princess', 'door', 'cabinet']
 
         strings = strings.split()
